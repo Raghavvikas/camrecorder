@@ -16,11 +16,11 @@ const Table = ({ name, title, blob, time }) => {
         </thead>
         <tbody className="table-body">
           <tr className="row">
-            <td className="cell">{title}</td>
+            <td className="cell" contentEditable={true}>{title}</td>
             <td className="cell">
               <VideoPreviewPage data={{ videoBlob: blob }} />
             </td>
-            <td className="cell">{name}</td>
+            <td className="cell" contentEditable={true}>{name}</td>
             <td className="cell">{time + " secs"}</td>
             <td>
               <span className="table-remove">
